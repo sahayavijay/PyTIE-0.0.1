@@ -80,12 +80,12 @@ class topological_indices_Degree:
                 for j in range(m, n+1):
                     for r in range(1, 7):
                         if(i>=j):
-                            edge_part=float(input("Specify the values for partitioning edges in the graph of "+str(r)+" dimension of "+str((j, i))+": "))
+                            edge_part=int(input("Specify the values for partitioning edges in the graph of "+str(r)+" dimension of "+str((j, i))+": "))
                             a1.append(edge_part)
                             a11.append(edge_part)
                             a111.append(edge_part)
             #coding of expression of partition
-            h=float(input("Specify the quantity of edge partitions generated above: "))
+            h=int(input("Specify the quantity of edge partitions generated above: "))
             for p in range(1, h+1):
                 for i in range(((6*p)-5),6*p):
                     u0=(a1[i]-a1[i-1])
